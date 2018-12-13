@@ -140,12 +140,10 @@ Here comparing NBA classification models and showing the p-values from a logisti
     %\label{fig:example}%
 \end{figure}
 
-While all the models are good, the Neural Network performed the best. However, the Logistic Regression gives the coach the most information, from the subset above going for blocks may be a great crowd pleaser, but getting defensive rebounds is the way to get to the playoffs!
-
 \subsection{Regression} 
-Regression is another type of supervised learning in which the output of the algorithm or hypothesized prediction is a real or continuous value. In terms of predicting NBA outcomes, Support Vector Regression and Linear Regression will be predicting the player's efficiency rating (PER). 
+Regression is another type of supervised learning in which the output of the algorithm or hypothesized prediction is a real or continuous value. In terms of predicting NBA outcomes, Support Vector Regression and Linear Regression will be predicting the player's salary. 
 
-\textbf{\textit{Support Vector Machine}} can be used for classification, but can also be used as a regression method by using the same set of principles with few modifications.
+\textbf{\textit{Support Vector Machine}} used for classification, can also be used as a regression method by using the same set of principles with few modifications.
 In Support Vector Regression a margin of tolerance, $\epsilon$ - epsilon, is set in approximation to the \textit{SVM}.
 The goal is to find a function $f(x)$ that does not deviate from $y_n$ by a value greater than the epsilon for each training point $x$.
 While the idea of minimizing error and individualizing the hyperplane remains consistent with \textit{SVM}, one modification is that a part of that error is tolerated.
@@ -364,17 +362,11 @@ The plot in the right of the Figure~\ref{fig:reg_plot} shows that residuals are 
 log transformation of our response variable. Now the Homoskedasticity assumption is valid and linear regression can be applied to study our target variable.
 By applying this transformation and by trying various combinations of predictors we were able to improve the performance of our linear models.
 
-\section{Conclusions}
-
-Clearly machine learning techniques can over-fit training data leading to an art rather than a science of building 
-a better predictive model. We hope future research will further refine this fascinating field, in particular, 
-using, to the extent possible, more mathematical rigor rather than random re-sampling to draw conclusions (which is why the authors much prefer SVM to ANN, with a stronger foundation in theory and using QP rather than simple back prop refitting randoms, in its rigor and  to ANN.
-
-\begin{enumerate}
-	\item Using ANN shows good result for prediction NBA playoffs (0.942)
-	\item After hyperparameter search, with only 30 features left, result do not change much and CPU usage for learning progress has a significant decrease
-	\item Hyperparameter Optimization in this project is successful 
-\end{enumerate}
+\section{Conclusion}
+While all classification models performed well in predicting if a player makes to playoffs, the Neural Network model performed the best. However, the Logistic Regression gives the coach the most information. 
+It can be observed with the help of this model that while going for blocks may be a great crowd pleaser, getting defensive rebounds is the way to get to the playoffs!
+In case of regression even though all models performed well and we were able to idenity some of the features that play key role in predicting the salary, we were not able to identify the exact relationship, including interactions, between the predictors.
+We hope future research will further refine this fascinating field, in particular, using, to the extent possible, more mathematical rigor rather than refitting random guesses.
 
 %\section*{Acknowledgments}
 
